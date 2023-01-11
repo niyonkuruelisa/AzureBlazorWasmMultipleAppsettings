@@ -9,10 +9,10 @@ env:
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
   WORKING_DIRECTORY: Client
-  Authority: "https://{{Teacher-Login-Url}}"
-  ClientId: "Teacher-id"
-  ValidateAuthority: false
-  Environment: "dev"
+  AUTHORITY: "https://{{Teacher-Login-Url}}"
+  CLIENT_ID: "Teacher-id"
+  VALIDATE_AUTHORITY: false
+  PROJECT_ENVIRONMENT: "dev"
 jobs:
   build:
 
@@ -32,10 +32,10 @@ jobs:
       with:
         files: 'Client/wwwroot/appsettings.json,Server/appsettings.json'
       env:
-        AzureAdB2C.Authority: ${{ env.Authority }}
-        AzureAdB2C.ClientId: ${{ env.ClientId }}
-        AzureAdB2C.ValidateAuthority: ${{ env.ValidateAuthority }}
-        AzureAdB2C.Version: ${{ env.Environment }}
+        AzureAdB2C.Authority: ${{ env.AUTHORITY }}
+        AzureAdB2C.ClientId: ${{ env.CLIENT_ID }}
+        AzureAdB2C.ValidateAuthority: ${{ env.VALIDATE_AUTHORITY }}
+        AzureAdB2C.Version: ${{ env.PROJECT_ENVIRONMENT }}
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
     - name: Test
