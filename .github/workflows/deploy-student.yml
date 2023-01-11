@@ -1,16 +1,16 @@
-name: .NET Blazor Webasssemby Deploy Teacher
+name: .NET Blazor Webasssemby Deploy Student
 
 on:
   push:
     branches: [ "main" ]
 env:
-  AZURE_WEBAPP_NAME: BlazorWasmMultipleAppsettings-Azure-Teacher
+  AZURE_WEBAPP_NAME: BlazorWasmMultipleAppsettings-Azure-Student
   AZURE_WEBAPP_PACKAGE_PATH: Client/published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
   WORKING_DIRECTORY: Client
-  AUTHORITY: "https://{{Teacher-Login-Url}}"
-  CLIENT_ID: "Teacher-id"
+  AUTHORITY: "https://{{Student-Login-Url}}"
+  CLIENT_ID: "Student-id"
   VALIDATE_AUTHORITY: false
   PROJECT_ENVIRONMENT: "dev"
 jobs:
