@@ -12,7 +12,7 @@ env:
   Authority: "https://{{Teacher-Login-Url}}"
   ClientId: "Teacher-id"
   ValidateAuthority: false
-  Version: "dev"
+  Environment: "dev"
 jobs:
   build:
 
@@ -35,7 +35,7 @@ jobs:
         AzureAdB2C.Authority: ${{ env.Authority }}
         AzureAdB2C.ClientId: ${{ env.ClientId }}
         AzureAdB2C.ValidateAuthority: ${{ env.ValidateAuthority }}
-        AzureAdB2C.Version: ${{ env.Version }}
+        AzureAdB2C.Version: ${{ env.Environment }}
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
     - name: Test

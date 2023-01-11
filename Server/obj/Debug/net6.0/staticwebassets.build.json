@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kstsHyGkBdnFIsPCjsyVOxbmwa6cBEQP88ksPpAM3g0=",
+  "Hash": "6y6vS7egG3GU/5s/curfjBk8mg0WAUE2H4O7tt/Z7tE=",
   "Source": "TestMultipleAppsettings.Server",
   "BasePath": "_content/TestMultipleAppsettings.Server",
   "Mode": "Default",
@@ -6895,6 +6895,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Projects\\WebDev\\C#\\practices\\TestMultipleAppsettings\\Client\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TestMultipleAppsettings.Client.styles.css"
+    },
+    {
+      "Identity": "D:\\Projects\\WebDev\\C#\\practices\\TestMultipleAppsettings\\Client\\wwwroot\\appsettings.json",
+      "SourceId": "TestMultipleAppsettings.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\WebDev\\C#\\practices\\TestMultipleAppsettings\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "appsettings.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.json"
     },
     {
       "Identity": "D:\\Projects\\WebDev\\C#\\practices\\TestMultipleAppsettings\\Client\\wwwroot\\css\\app.css",
